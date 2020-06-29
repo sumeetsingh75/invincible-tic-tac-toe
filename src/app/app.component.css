@@ -1,0 +1,151 @@
+.toolbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background:#1566b7;
+    font-weight: bold;
+    text-shadow: 0px 2px 3px #02182e;
+  }
+  
+  .title {
+    margin-left: 1%;
+    font-family: monospace;
+    color: floralwhite;
+  }
+
+  .container-fluid{
+    margin-top: 5%;
+  }
+
+  .score-board{
+    margin:1%;
+  }
+
+  .options{
+    visibility: visible;
+    margin-top:10%;
+    outline: 1px dashed #98abb9;
+    outline-offset: -10px;
+    padding: 10px;
+    background: #ffece6;
+  }
+
+  .base-button{
+    background: linear-gradient(to right, #ff80b3,#ff00aa);
+    border: 2px solid #f537b5;
+    box-shadow: 1px 4px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: monospace;
+    margin: 4px 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+  }
+
+  .base-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .button-label{
+    text-shadow: 0px 2px 3px #000;
+  }
+
+  .newGame-button{
+    background: linear-gradient(to right,#8585e0,#4747d1);
+    border: 2px solid #5c5cd6;
+  }
+
+  p{
+    font-weight: 500;
+    font-family: monospace;
+  }
+
+  .info{
+    margin-top: 10%;
+  }
+
+  .info-label{
+    -webkit-text-stroke: 1px black;
+    color: darkkhaki;
+    letter-spacing: 0.08em;
+    text-shadow:
+      -1px -1px 0 #555,  
+       1px -1px 0 #555,
+       -1px 1px 0 #555,
+        1px 1px 0 #555;
+  }
+
+  .result-section{
+    margin-top: 10%;
+    color:#ff80b3;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+
+  .winner{
+    display: none;
+  }
+ 
+  .winner p{
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+/* Responsive Styles */
+@media screen and (max-width:575.98px){
+  p{
+   font-size: 20px;
+  }
+
+  .result-section p{
+   font-size: 25px;
+  }
+
+  .base-button{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+  p{
+    font-size: 20px;
+  }
+
+  .result-section p{
+    font-size: 25px;
+  }
+
+  .base-button{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:768.01px){
+  p{
+    font-size: 30px;
+  }
+
+  .result-section p{
+    font-size: 35px;
+  }
+
+  .base-button{
+    font-size: 20px;
+  }
+}
+/* </style> */

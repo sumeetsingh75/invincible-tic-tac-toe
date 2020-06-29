@@ -1,0 +1,4 @@
+<div class="grid">
+    <div *ngFor="let cells of displayBoard; let i = index" id='{{i}}' (click)='gameController(i)' class="cell">{{cells}}
+    </div>
+  </div>
